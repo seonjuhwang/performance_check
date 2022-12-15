@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 var cors = require('cors');
-const port = 5000;
+const port = 3000;
 
 app.use(cors());
 const server = app. listen(3000,()=> {
-    console.log('Start Server : localhost:5000');
+    console.log('Start Server : localhost:3000');
 });
 
 app.get('/api/performance_check/:type', async(req,res) => {
