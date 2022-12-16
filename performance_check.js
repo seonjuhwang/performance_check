@@ -14,14 +14,14 @@ app.get('/api/performance_check/:type', async(req,res) => {
     } = req.params;
     if(type == '1111'){
         let data = [
-            {name:"교환(교체)", state:"없음"},
-            {name:"판금/용접", state:"없음"},
-            {name:"부식", state:"없음"},
-            {name:"요철", state:"없음"},
-            {name:"손상", state:"없음"},
-            {name:"사고 이력", state:"없음"},
-            {name:"단순 수리", state:"없음"},
-            {name:"성능/상태점검자", state:"홍길동"}
+            {name:"교환(교체)", state:"--"},
+            {name:"판금/용접", state:"--"},
+            {name:"부식", state:"--"},
+            {name:"요철", state:"--"},
+            {name:"손상", state:"--"},
+            {name:"사고 이력", state:"--"},
+            {name:"단순 수리", state:"--"},
+            {name:"성능/상태점검자", state:"--"}
         ];
         res.send(data);
     }
